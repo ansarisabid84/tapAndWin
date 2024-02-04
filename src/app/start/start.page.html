@@ -1,8 +1,11 @@
 <ion-content [fullscreen]="true">
   <div class="container">
-    <ion-button class="row1" (click)="clickedMe('player1')">Player 1</ion-button>
-    <div class="border"></div>
-    <ion-button class="row2" (click)="clickedMe('player2')">Player 2</ion-button>
+
+    <ion-button class="row1" #playerOne>Player 1</ion-button>
+    <div class="border">
+      <ion-text class="timeLeft">Time Left: {{timeLeft}}s</ion-text>
+    </div>
+    <ion-button class="row2" #playerTwo>Player 2</ion-button>
 
   </div>
 </ion-content>

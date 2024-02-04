@@ -1,11 +1,47 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  
+
+  <ion-card class="container">
+    <div class="content-container">
+      <ion-text class="title home">Tab & Win</ion-text>
+      <ion-text class="play-button home" [routerLink]="['/start']">Play</ion-text>
+      <div class="bottom">
+        <ion-icon name="help-outline" id="help2-modal" expand="block"></ion-icon>
+        <ion-icon name="settings-outline" id="settings-modal" expand="block"></ion-icon>
+      </div>
+    </div>
+  </ion-card>
+
+  <ion-modal trigger="help2-modal" [initialBreakpoint]="0.8" [breakpoints]="[0, 0.9]" class="help-ion-modal">
+    <ng-template>
+      <ion-toolbar>
+        <ion-title class="modal-title">How to Play?</ion-title>
+      </ion-toolbar>
+      <div class="block">
+        <ul>
+          <li>Two players are assigned specific sections on the screen.</li>
+          <li>Tap or click within your designated area to start filling it. The game begins when both players tap their sections.</li>
+          <li>Continuously tap within your assigned area to fill it with color or pattern.</li>
+          <li>Both players play simultaneously, racing to fill their respective boxes first.</li>
+          <li>The first player to completely fill their box is the winner.</li>
+        </ul>
+      </div>
+    </ng-template>
+  </ion-modal>
+
+  <ion-modal trigger="settings-modal" [initialBreakpoint]="0.4" [breakpoints]="[0, 0.25, 0.5, 0.75]"
+    handleBehavior="cycle" class="help-ion-modal">
+    <ng-template>
+      <ion-toolbar>
+        <ion-title class="modal-title">Settings</ion-title>
+      </ion-toolbar>
+      <ion-content class="ion-padding">
+        <div class="ion-margin-top modal-title">
+          <ion-label>Coming soon....</ion-label>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+
+
 </ion-content>

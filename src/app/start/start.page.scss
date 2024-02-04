@@ -1,22 +1,26 @@
 .container {
     height: 100vh;
     background-color: grey;
-    border: 15px solid black;
-}
-.row1 {
-    height: 50vh;
+    border: 2vh solid black;
+    position: absolute;
     width: 100%;
-    // width: 100vh;
-    background-color: beige;
+    font-family: fantasy;
 }
-.row2 {
-    height: 45vh;
+
+ion-button {
+    font-size: xx-large;
+    color: black;
+    height: 46vh;
     width: 100%;
-    // width: 100vh;
-    background-color: green;
+    --background: beige;
+}
+.timeLeft {
+    color: white;
+    padding: 1%;
 }
 
 .border {
-    height: 1vh;
+    height: 3vh;
     background-color: black;
+    text-align: center;
 }
